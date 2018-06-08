@@ -10,7 +10,6 @@
 
 	<name>eureka-server</name>
 	<description>Eureka Server demo project</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
