@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: config-client
+    cloud:
+        config:
+            uri: http://localhost:8601/ #config-server服务地址
+            profile: dev                #config-repo-demo中的dev/pro文件
+            label: master               #git中master分支
+
+server:
+    port: 8701
