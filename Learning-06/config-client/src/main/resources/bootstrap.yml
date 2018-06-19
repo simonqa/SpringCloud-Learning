@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: config-client
+    cloud:
+        config:
+            profile: dev                 #config-repo-demo中的dev/pro文件
+#            uri: http://localhost:8601/ #config-server服务地址
+#            label: master               #git中master分支
+            discovery:
+                enabled: true
+                serviceId: config-server
+server:
+    port: 8701
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8000/eureka/ #服务注册中心
+management:
+    security:
+        enabled: false #关闭安全认证
